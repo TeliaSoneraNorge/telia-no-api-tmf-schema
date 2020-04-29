@@ -14,7 +14,7 @@ components:
   schemas:
     BillStructureTelia:
       allOf:
-        - $ref: "./Account.regular.r19.oas3.yaml#/components/schemas/BillStructure"
+        - $ref: "https://raw.githubusercontent.com/austpaul/tmf/master/Account.regular.r19.oas3.yaml#/components/schemas/BillStructure"
         - type: object
           properties:
             nextCycleSpecification:

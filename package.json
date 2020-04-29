@@ -5,10 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "@telia-no-api/openapi-generator-cli": "^1.0.0"
+    "@telia-no-api/openapi-generator-cli": "^1.0.0",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
-    "test": "openapi-generator generate -g typescript-node -i BillStructureTelia.yaml -Dmodels -o generatedSrc"
+    "test": "rimraf generatedSrc && openapi-generator generate -g typescript-node -i BillStructureTelia.yaml -Dmodels -o generatedSrc"
   },
   "repository": {
     "type": "git",
