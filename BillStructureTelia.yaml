@@ -93,7 +93,7 @@ components:
           description: When sub-classing, this defines the sub-class entity name
       description: The structure of the bill for party accounts (billing or settlement).
     BillStructureTelia:
-      allOf: # Combines the BasicErrorModel and the inline model
+      allOf:
         - $ref: "#/components/schemas/BillStructure"
         - type: object
           properties:
