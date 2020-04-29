@@ -3,6 +3,13 @@ info:
   title: BillStructureTelia
   description: This is an extended BillStructure schema containing nextCycleSpecification
   version: 4.0.0
+paths:
+  /dummy:
+    get:
+      summary: dummy
+      responses:
+        200:
+          description: ok
 components:
   schemas:
     BillFormatRefOrValue:
@@ -93,7 +100,7 @@ components:
           description: When sub-classing, this defines the sub-class entity name
       description: The structure of the bill for party accounts (billing or settlement).
     BillStructureTelia:
-      allOf:
+      allOf: # Combines the BasicErrorModel and the inline model
         - $ref: "#/components/schemas/BillStructure"
         - type: object
           properties:

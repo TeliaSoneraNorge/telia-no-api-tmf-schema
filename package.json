@@ -1,0 +1,23 @@
+{
+  "name": "telia-no-api-tmf-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@telia-no-api/openapi-generator-cli": "^1.0.0"
+  },
+  "scripts": {
+    "test": "openapi-generator generate -g typescript-node -i BillStructureTelia.yaml -Dmodels -o generatedSrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeliaSoneraNorge/telia-no-api-tmf-schema.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeliaSoneraNorge/telia-no-api-tmf-schema/issues"
+  },
+  "homepage": "https://github.com/TeliaSoneraNorge/telia-no-api-tmf-schema#readme"
+}
