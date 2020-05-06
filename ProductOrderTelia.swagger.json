@@ -1,0 +1,136 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Product Ordering",
+    "description": "TMForum model extension",
+    "version": "1.0.0"
+  },
+  "basePath": "/tmf-api/productOrderingManagement/v4/telia",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+  },
+  "definitions": {
+    "RelatedPlaceRefOrValueTelia": {
+      "allOf": [
+        {
+          "$ref": "https://github.com/tmforum-apis/TMF622_ProductOrder/blob/master/Product_Ordering_Management.regular.swagger.json##/definitions/RelatedPlaceRefOrValue"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "street": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "streetNumber": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "postcode": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "city": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "country": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "contactEmailAddress": {
+              "type": "string",
+              "description": "Email delivery address"
+            },
+            "contactTelephoneNumber": {
+              "type": "string",
+              "description": "Phone number delivery address"
+            },
+            "@baseType": {
+              "default": "/definitions/RelatedPlaceRefOrValue",
+              "type": "string",
+              "description": "When sub-classing, this defines the super-class"
+            },
+            "@schemaLocation": {
+              "type": "string",
+              "format": "uri",
+              "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+            }
+          }
+        }
+      ]
+    },
+    "ProductOrderItemTelia": {
+      "allOf": [
+        {
+          "$ref": "https://github.com/tmforum-apis/TMF622_ProductOrder/blob/master/Product_Ordering_Management.regular.swagger.json##/definitions/ProductOrderItem"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "expectedCompletionDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Expected delivery date amended by the provider"
+            },
+            "shipmentStatus": {
+              "type": "string",
+              "description": "Status of delivery"
+            },
+            "itemActionTelia": {
+              "type": "string",
+              "description": "Action to make with item based on Telia Standard"
+            },
+            "shipmentMethod": {
+              "type": "string",
+              "description": "Method chosen for delivery"
+            },
+            "orderItemType": {
+              "type": "string",
+              "description": "Product order item type - Extension with type order, eg New Subscription"
+            },
+            "@baseType": {
+              "default": "/definitions/ProductOrderItem",
+              "type": "string",
+              "description": "When sub-classing, this defines the super-class"
+            },
+            "@schemaLocation": {
+              "type": "string",
+              "format": "uri",
+              "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+            }
+          }
+        }
+      ]
+    },
+    "OrderItemActionTypeTelia": {
+      "type": "string",
+      "description": "action to be performed on the product",
+      "enum": [
+        "add",
+        "change",
+        "remove",
+        "use"
+      ]
+    },
+    "OrderItemTypeTelia": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "ACCOUNT",
+        "NEW_SUBSCRIPTION",
+        "CHANGE_SUBSCRIPTION",
+        "CHANGE_OWNER",
+        "CHANGE_USER",
+        "HARDWARE_ORDER",
+        "PORTING",
+        "CANCELLATION",
+        "ADD_AND_REMOVE_ADD_ON_SERVICES",
+        "PURCHASE_OF_TOP_UPS",
+        "SERVICE_ORDER"
+      ]
+    }
+  }
+}
