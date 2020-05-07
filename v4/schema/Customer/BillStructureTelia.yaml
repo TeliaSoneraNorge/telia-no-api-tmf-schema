@@ -1,0 +1,13 @@
+definitions:
+  BillStructure:
+    $ref: #/components/schemas/BillStructure
+  BillingCycleSpecificationRefOrValue:
+    $ref: #/components/schemas/BillingCycleSpecificationRefOrValue
+
+title: BillStructureTelia
+type: object
+allOf:
+  - $ref: "#/definitions/BillStructure"
+  - properties:
+      nextCycleSpecification:
+        $ref: "#/definitions/BillingCycleSpecificationRefOrValue"
