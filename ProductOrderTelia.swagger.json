@@ -112,7 +112,8 @@
         "add",
         "change",
         "remove",
-        "use"
+        "use",
+        "modify"
       ]
     },
     "OrderItemTypeTelia": {
