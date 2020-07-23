@@ -1,0 +1,13 @@
+definitions:
+  BillStructure:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF666-Account-v4.0.0.swagger.json#/definitions/BillStructure
+  BillingCycleSpecificationRefOrValue:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF666-Account-v4.0.0.swagger.json#/definitions/BillingCycleSpecificationRefOrValue
+
+title: BillStructureTelia
+type: object
+allOf:
+  - $ref: "#/definitions/BillStructure"
+  - properties:
+      nextCycleSpecification:
+        $ref: "#/definitions/BillingCycleSpecificationRefOrValue"
