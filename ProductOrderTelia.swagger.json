@@ -82,7 +82,7 @@
             "marketingAgreement": {
               "type": "object",
               "description": "Marketing agreements provided by customer",
-              "$ref": "#/definitions/MarketingAgreement"
+              "$ref": "#/definitions/MarketingAgreementTelia"
             },
             "expectedCompletionDate": {
               "type": "string",
@@ -167,7 +167,7 @@
         "COMPLETE_OWNER"
       ]
     },
-    "MarketingAgreement": {
+    "MarketingAgreementTelia": {
       "type": "object",
       "description": "Agreements aggregation class",
       "properties": {
