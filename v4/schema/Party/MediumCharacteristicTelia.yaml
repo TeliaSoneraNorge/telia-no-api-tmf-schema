@@ -33,5 +33,5 @@ allOf:
         type: string
       postboxNr:
         type: string
-      postBoxName:
+      postboxName:
         type: string
