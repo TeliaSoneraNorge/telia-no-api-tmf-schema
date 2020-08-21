@@ -1,0 +1,37 @@
+definitions:
+  MediumCharacteristic:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF632-Party-v4.0.0.swagger.json#/definitions/MediumCharacteristic
+
+title: MediumCharacteristicTelia
+type: object
+allOf:
+  - $ref: "#/definitions/MediumCharacteristic"
+  - properties:
+      stateOrProvince:
+        type: string
+        description: State or province
+      street1:
+        type: string
+        description: Describes the street
+      street2:
+        type: string
+        description: Complementary street description
+      streetName:
+        type: string
+        description: Name of the street or other street type
+      streetNr:
+        type: string
+        description: >-
+          Number identifying a specific property on a public street. It may be
+          combined with streetNrLast for ranged addresses
+      streetNrSuffix:
+        type: string
+        description: The first street number suffix
+      dwellingNumber:
+        type: string
+      careOf:
+        type: string
+      postboxNr:
+        type: string
+      postBoxName:
+        type: string
