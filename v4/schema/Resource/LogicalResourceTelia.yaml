@@ -1,16 +1,23 @@
 definitions:
   LogicalResource:
-    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/interface_definitions/master/tmforum/TMF639_ResourceInventory/19.5TMF639-ResourceInventory-v4.0.0.swagger.json#/definitions/LogicalResource
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/interface_definitions/master/tmforum/TMF639_ResourceInventory/19.5/TMF639-ResourceInventory-v4.0.0.swagger.json#/definitions/LogicalResource
   PortingInfo:
-    portingDate: string
+    portingDate:
+      type: string
       format: date-time
-    status: string
-    error: string
-    info: string
-    transactionDate: string
+    status:
+      type: string
+    error:
+      type: string
+    info:
+      type: string
+    transactionDate:
+      type: string
       format: date-time
-    from: string
-    to: string
+    from:
+      type: string
+    to:
+      type: string
 
 title: LogicalResourceTelia
 type: object
