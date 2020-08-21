@@ -1,6 +1,6 @@
 definitions:
   LogicalResource:
-    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/interface_definitions/master/tmforum/TMF639_ResourceInventory/19.5/TMF639-ResourceInventory-v4.0.0.swagger.json#/definitions/LogicalResource
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF639-ResourceInventory-v4.0.0.swagger.json#/definitions/LogicalResource
   PortingInfo:
     portingDate:
       type: string
