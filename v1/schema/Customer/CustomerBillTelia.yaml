@@ -1,0 +1,10 @@
+definitions:
+  CustomerBill:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v1/spec/CustomerBill_Management.regular.swagger.json#/definitions/CustomerBill
+title: CustomerBillTelia
+type: object
+allOf:
+  - $ref: "#/definitions/CustomerBill"
+  - properties:
+      hasPaymentArrangement:
+        type: boolean
