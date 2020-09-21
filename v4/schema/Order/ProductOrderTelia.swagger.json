@@ -93,10 +93,6 @@
               "type": "string",
               "description": "Status of delivery"
             },
-            "itemActionTelia": {
-              "type": "string",
-              "description": "Action to make with item based on Telia Standard"
-            },
             "shipmentMethod": {
               "type": "string",
               "description": "Method chosen for delivery"
@@ -127,17 +123,6 @@
             }
           }
         }
-      ]
-    },
-    "OrderItemActionTypeTelia": {
-      "type": "string",
-      "description": "action to be performed on the product",
-      "enum": [
-        "add",
-        "change",
-        "remove",
-        "use",
-        "modify"
       ]
     },
     "OrderItemTypeTelia": {
@@ -241,6 +226,22 @@
             }
           }
         }
+      ]
+    },
+    "DeliveryProductCharacteristic": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "PLACE_NAME",
+        "EMAIL",
+        "CONTACT_TELEPHONE_NUMBER",
+        "ADDRESS_REFERENCE_ID",
+        "STREET",
+        "STREET_NUMBER",
+        "CITY",
+        "COUNTRY_CODE",
+        "DOOR_NUMBER",
+        "POSTCODE"
       ]
     }
   }
