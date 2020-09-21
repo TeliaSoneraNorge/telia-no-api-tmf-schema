@@ -1,0 +1,10 @@
+definitions:
+  BillingAccount:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF666-Account-v4.0.0.swagger.json#/definitions/BillingAccount
+title: BillingAccountTelia
+type: object
+allOf:
+  - $ref: "#/definitions/BilligAccount"
+  - properties:
+      statusReasonDescription:
+        type: string
