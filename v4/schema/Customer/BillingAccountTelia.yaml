@@ -4,7 +4,7 @@ definitions:
 title: BillingAccountTelia
 type: object
 allOf:
-  - $ref: "#/definitions/BilligAccount"
+  - $ref: "#/definitions/BillingAccount"
   - properties:
       statusReasonDescription:
         type: string
