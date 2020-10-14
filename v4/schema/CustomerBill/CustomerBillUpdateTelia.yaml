@@ -1,0 +1,19 @@
+definitions:
+  CustomerBill:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/tmforum/TMF678_CustomerBillManagement/17.5/CustomerBill_Management.regular.oas3.yaml#/definitions/CustomerBillUpdate
+
+title: CustomerBillUpdateTelia
+type: object
+allOf:
+  - $ref: "#/definitions/CustomerBillUpdate"
+  - properties:
+      paymentDueDate:
+        description: Date at which the amount due should have been paid
+        type: string
+        format: date-time
+      waiveFee:
+        description: Whether or not the fee for the postponed payment or payment arrangement should be waived
+        type: boolean
+      userText:
+        description: Usertext for update
+        type: string
