@@ -1,6 +1,6 @@
 definitions:
-  CustomerBill:
-    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/interface_definitions/master/tmforum/TMF678_CustomerBillManagement/17.5/CustomerBill_Management.regular.oas3.yaml#/definitions/CustomerBillUpdate
+  CustomerBillUpdate:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v1/spec/CustomerBill_Management.regular.swagger.json#/definitions/CustomerBillUpdate
 
 title: CustomerBillUpdateTelia
 type: object
