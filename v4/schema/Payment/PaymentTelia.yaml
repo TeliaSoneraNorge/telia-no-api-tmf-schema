@@ -1,0 +1,12 @@
+definitions:
+  Payment:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF676-Payment-v4.0.0.swagger#/definitions/Payment
+
+title: PaymentTelia
+type: object
+allOf:
+  - $ref: "#/definitions/Payment"
+  - properties:
+      bankAccountNumber:
+        type: string
+        description: The originating bank account number of the payment
