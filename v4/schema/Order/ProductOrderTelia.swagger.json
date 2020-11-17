@@ -105,6 +105,25 @@
               "type": "string",
               "description": "Item user"
             },
+            "expectedCompletionDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Expected delivery date amended by the provider"
+            },
+            "stateChangeReason": {
+              "type": "string",
+              "description": "Works only during action suspend"
+            },
+            "statusChangeStartDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Field used only for activate, suspend and freeze action. Start of status change"
+            },
+            "statusChangeEndDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Field used only for activate, suspend and freeze action. End of status change"
+            },
             "directoryListing": {
               "type": "object",
               "$ref": "#/definitions/DirectoryListeningTypeTelia",

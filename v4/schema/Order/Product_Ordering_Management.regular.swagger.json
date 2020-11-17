@@ -215,6 +215,13 @@
         ],
         "parameters": [
           {
+            "name": "dealer_code",
+            "description": "Dealer code for authentication",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          },
+          {
             "name": "productOrder",
             "description": "The ProductOrder to be created",
             "required": true,
@@ -1853,7 +1860,10 @@
         "delete",
         "noChange",
         "use",
-        "port_in"
+        "port_in",
+        "activate",
+        "suspend",
+        "freeze"
       ]
     },
     "OrderItemRelationship": {
