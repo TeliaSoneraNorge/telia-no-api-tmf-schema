@@ -1,6 +1,6 @@
 definitions:
   Payment:
-    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF676-Payment-v4.0.0.swagger#/definitions/Payment
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF676-Payment-v4.0.0.swagger.json#/definitions/Payment
 
 title: PaymentTelia
 type: object
