@@ -1863,7 +1863,8 @@
         "port_in",
         "activate",
         "suspend",
-        "freeze"
+        "freeze",
+        "cancel"
       ]
     },
     "OrderItemRelationship": {
