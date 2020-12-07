@@ -262,6 +262,53 @@
         "DOOR_NUMBER",
         "POSTCODE"
       ]
+    },
+    "CancelSubscriptionReasonCodes": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "SUBSCRIPTION_NOT_IN_USE",
+        "CANCEL_BEFORE_PORT_IN",
+        "COVERAGE",
+        "DEATH",
+        "MISREGISTERED_CANCEL_WITHDRAWAL_PERIOD",
+        "FRAUD",
+        "FRAUD_3",
+        "FRAUD1_FRAUD_DEALER_ERROR",
+        "FRAUD2_FRAUD_DEALER_ERROR",
+        "BANKRUPT",
+        "TERMINATION_ONE_OF_MORE_NC_SUBS",
+        "OTHER",
+        "JURIDICAL_DEBT_COLLECTION",
+        "WRITTEN_TERMINATION_WITHOUT_CAUSE",
+        "TECHNICAL_ERROR",
+        "STAY_ABROAD",
+        "NO_LONGER_WANT_TO_HAVE_A_CELL_PHONE"
+      ]
+    },
+    "ActivateSubscriptionReasonCodes": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "PROCEDURAL",
+        "PER_CUSTOMER_REQUEST",
+        "PER_CUSTOMER_REQUEST_SUB",
+        "OVER_CREDIT_LIMIT",
+        "PROCEDURAL_SUB",
+        "PAYMENT_RECEIVED_MANUAL",
+        "PAYMENT_RECEIVED_MANUAL_SUB"
+      ]
+    },
+    "SuspendSubscriptionReasonCodes": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "PER_CUSTOMER_REQUEST",
+        "FRAUD",
+        "LOST_HANDSET",
+        "MANUAL_SOFT",
+        "STOLEN_VEHICLE_EQUIPMENT"
+      ]
     }
   }
 }
