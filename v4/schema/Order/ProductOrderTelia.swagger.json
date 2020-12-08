@@ -105,11 +105,6 @@
               "type": "string",
               "description": "Item user"
             },
-            "expectedCompletionDate": {
-              "type": "string",
-              "format": "date-time",
-              "description": "Expected delivery date amended by the provider"
-            },
             "stateChangeReason": {
               "type": "string",
               "description": "Works only during action suspend"
