@@ -13,3 +13,6 @@ allOf:
       activityReference:
         type: string
         description: Identifier of activity
+      paymentId:
+        type: string
+        description: Identifier of payment
