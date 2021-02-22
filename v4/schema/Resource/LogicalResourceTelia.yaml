@@ -11,10 +11,10 @@ definitions:
         type: string
       error:
         type: string
-      details:
+      detail:
         type: array
         items:
-          $ref: 'Details'
+          $ref: 'Detail'
       info:
         type: string
       transactionDate:
