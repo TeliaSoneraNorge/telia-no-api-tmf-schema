@@ -11,8 +11,10 @@ definitions:
         type: string
       error:
         type: string
-      info:
-        type: string
+      details:
+        type: array
+        items:
+          $ref: 'Details'
       transactionDate:
         type: string
         format: date-time
@@ -22,6 +24,14 @@ definitions:
         type: string
     description: Info about a porting
 
+  Detail:
+    type: object
+    properties:
+      info:
+        type: string
+      transactionDate:
+        type: string
+        format: date-time
 title: LogicalResourceTelia
 type: object
 allOf:
