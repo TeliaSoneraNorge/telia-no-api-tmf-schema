@@ -1,0 +1,24 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Party Interaction",
+    "description": "TMForum model extension",
+    "version": "4.0.0"
+  },
+  "basePath": "/tmf-api/partyInteraction/v4/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+  },
+  "definitions": {
+    "RelatedPartyTypes": {
+      "type": "string",
+      "description": "Type of object of the product",
+      "enum": [
+        "CUSTOMER",
+        "OPERATOR"
+      ]
+    }
+  }
+}
