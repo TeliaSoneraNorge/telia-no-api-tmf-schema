@@ -12,6 +12,37 @@
   "paths": {
   },
   "definitions": {
+    "PartyInteractionTelia": {
+      "allOf": [
+        {
+          "$ref": "TMF683-PartyInteraction-v4.0.0.swagger.json#/definitions/PartyInteraction"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "systemText": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "manualText": {
+              "type": "string",
+              "description": "Street delivery address"
+            },
+            "@baseType": {
+              "default": "TMF683-PartyInteraction-v4.0.0.swagger.json#/definitions/PartyInteraction",
+              "type": "string",
+              "description": "When sub-classing, this defines the super-class"
+            },
+            "@schemaLocation": {
+              "default": "https://github.com/TeliaSoneraNorge/telia-no-api-tmf-schema/blob/master/v4/schema/PartyInteraction/PartyInteraction.swagger.json",
+              "type": "string",
+              "format": "uri",
+              "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+            }
+          }
+        }
+      ]
+    },
     "RelatedPartyTypes": {
       "type": "string",
       "description": "Type of object of the product",

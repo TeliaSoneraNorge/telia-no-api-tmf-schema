@@ -1196,6 +1196,7 @@
         },
         "PartyInteraction": {
             "type": "object",
+            "discriminator": "@type",
             "properties": {
                 "id": {
                     "type": "string",
