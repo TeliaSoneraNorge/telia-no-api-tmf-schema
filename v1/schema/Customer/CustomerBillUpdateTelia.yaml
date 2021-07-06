@@ -11,6 +11,10 @@ allOf:
         description: Date at which the amount due should have been paid
         type: string
         format: date-time
+      numberOfInstallments:
+        description: If a recurring payment arrangement is requested, number of installments
+        type: integer
+        minimum: 1
       waiveFee:
         description: Whether or not the fee for the postponed payment or payment arrangement should be waived
         type: boolean
