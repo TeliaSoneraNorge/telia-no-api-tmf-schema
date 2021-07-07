@@ -11,3 +11,7 @@ allOf:
   - properties:
       nextCycleSpecification:
         $ref: "#/definitions/BillingCycleSpecificationRefOrValue"
+  - properties:
+      invoiceLanguage:
+        type: string
+        description: Invoice language
