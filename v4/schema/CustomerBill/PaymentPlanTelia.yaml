@@ -1,0 +1,12 @@
+definitions:
+  PaymentPlan:
+    $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF666-Account-v4.0.0.swagger.json#/definitions/PaymentPlan
+
+title: PaymentPlanTelia
+type: object
+allOf:
+  - $ref: "#/definitions/PaymentPlan"
+  - properties:
+      waiveArrangementCharge:
+        type: boolean
+        description: Whether the charge for the payment arrangement should be waived
