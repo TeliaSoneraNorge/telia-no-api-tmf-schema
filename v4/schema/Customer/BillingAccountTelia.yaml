@@ -1,6 +1,16 @@
 definitions:
   BillingAccount:
     $ref: https://raw.githubusercontent.com/TeliaSoneraNorge/telia-no-api-tmf-schema/master/v4/spec/TMF666-Account-v4.0.0.swagger.json#/definitions/BillingAccount
+  SubscriptionCount:
+    type: object
+    properties:
+      active:
+        type: number
+      suspended:
+        type: number
+      reserved:
+        type: number
+
 title: BillingAccountTelia
 type: object
 allOf:
@@ -8,3 +18,6 @@ allOf:
   - properties:
       statusReasonDescription:
         type: string
+  - properties:
+      subscriptionCount:
+        $ref: "#/definitions/SubscriptionCount"
