@@ -10,3 +10,6 @@ allOf:
       bankAccountNumber:
         type: string
         description: The originating bank account number of the payment
+      uniqueId:
+        type: string
+        description: The unique ID of the payment
