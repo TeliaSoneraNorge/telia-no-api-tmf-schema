@@ -16,3 +16,6 @@ allOf:
       paymentId:
         type: string
         description: Identifier of payment
+      uniqueId:
+        type: string
+        description: The unique ID of the payment that changed balance
